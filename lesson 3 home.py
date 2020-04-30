@@ -60,3 +60,34 @@ print('Программа выполнила работу, Мой Господи
 # - среднее арифметическое (не считая завершающего числа 0)
 # - определить максимальное и минимальное значение
 # - определить количество чётных и не чётных элементов в последовательности
+
+print('Запускаем длинный процесс вычислений')
+kol_vved_chisel = 0
+n = 1
+summa_chisel = 0
+chetnoe = 0
+ne_chetnoe = 0
+maximalnoe_chislo = n
+while (n != 0):
+    n = int(input('n='))
+    summa_chisel = summa_chisel + n
+    kol_vved_chisel = kol_vved_chisel + 1
+    if (n % 2 == 0):
+        chetnoe = chetnoe + 1
+    else:
+        ne_chetnoe = ne_chetnoe + 1
+    if (n > maximalnoe_chislo):
+        maximalnoe_chislo = n
+    if (n < maximalnoe_chislo):
+        min = n
+
+print('Максимально число среди введенных чисел = ', maximalnoe_chislo)
+print('Минимально введенное число = ', min)
+print('Количество введенных чисел, не считая ноль = ', kol_vved_chisel - 1)
+print('Сумма введенных чисел = ', summa_chisel)
+print('Среднее арифметическое введенных чисел = ', summa_chisel / (kol_vved_chisel - 1))
+print('Количество нечётных чисел = ', ne_chetnoe)
+print('Количество чётных чисел = ', chetnoe - 1)
+print('Программа окончена, Мой Господин!')
+
+
